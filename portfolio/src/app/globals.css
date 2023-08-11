@@ -10,6 +10,9 @@
   h2 {
     @apply text-SECONDARY text-4xl font-raleway;
   }
+  h3 {
+    @apply text-PRIMARY text-xl font-raleway;
+  }
   p {
     @apply text-NEUTRAL font-raleway;
   }
