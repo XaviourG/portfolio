@@ -9,10 +9,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      colors: {
+        PRIMARY: '#0A9396',
+        SECONDARY: '#0A9396',
+        NEUTRAL_LIGHT: '',
+        NEUTRAL: '',
+        NEUTRAL_DARK: '',
+        BACKGROUND: '#0A9396',
+        BACKGROUND_START: '#000000',
+        BACKGROUND_END: '#FFFFFF',
       },
     },
   },

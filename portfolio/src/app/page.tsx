@@ -25,7 +25,8 @@ import PortfolioBody from "./portfolioBody";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center">
+    <main className="flex min-h-screen flex-col items-center 
+    bg-gradient-to-bl from-BACKGROUND_START via-BACKGROUND to-BACKGROUND_END">
       <PortfolioBody/>
     </main>
   )
