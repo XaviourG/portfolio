@@ -3,7 +3,7 @@
 import NavigationBar from "@/components/top_bar/NavigationBar";
 import AboutSegment from "@/panels/AboutSegment";
 import ContactSegment from "@/panels/ContactSegment";
-import ExperienceSegment from "@/panels/ExperienceSegment";
+import ShowcaseSegment from "@/panels/ShowcaseSegment";
 import ProjectsSegment from "@/panels/ProjectsSegment";
 import { ReactElement } from "react"
 
@@ -17,7 +17,7 @@ const PortfolioBody = (): ReactElement => {
         <AboutSegment/>
       </div>
       <div className='flex flex-col sm:w-full xl:w-1/2'>
-        <ExperienceSegment/>
+        <ShowcaseSegment/>
         <ProjectsSegment/>
         <ContactSegment/>
       </div>
