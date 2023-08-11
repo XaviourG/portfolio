@@ -1,12 +1,10 @@
 import { ReactElement } from "react";
 
 const NavigationBar = (): ReactElement => {
-  return <div style={{
-    display: 'flex',
-    width: '100%',
-    backgroundColor: 'blue',
-  }}>
-    navigation bar
+  return <div className='flex w-full justify-around'>
+    <p>Projects</p>
+    <p>Experience</p>
+    <p>Contact</p>
   </div>
 }
 
