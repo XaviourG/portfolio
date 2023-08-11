@@ -1,9 +1,5 @@
-'use client'
-
+import ResponsiveRenderer from "@/layouts/ResponsiveRenderer";
 import { useState } from "react";
-import NavigationBar from "@/components/top_bar/NavigationBar";
-import MobileLayout from "@/layouts/MobileLayout";
-import DesktopLayout from "@/layouts/DesktopLayout";
 
 // // Import the functions you need from the SDKs you need
 // import { initializeApp } from "firebase/app";
@@ -28,27 +24,9 @@ import DesktopLayout from "@/layouts/DesktopLayout";
 // const analytics = getAnalytics(app);
 
 export default function Home() {
-  const [isMobile, setIsMobile] = useState(false);
-
-  const handleResize = () => {
-    if (window.innerWidth < 720) {
-      setIsMobile(true);
-    } else {
-      setIsMobile(false);
-    }
-  }
-
-  window.addEventListener('resize', handleResize);
-
   return (
     <main className="flex min-h-screen flex-col items-center">
-      {
-        isMobile
-        ?
-        <MobileLayout/>
-        :
-        <DesktopLayout/>
-      }
+      <ResponsiveRenderer/>
     </main>
   )
 }
