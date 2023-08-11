@@ -2,7 +2,7 @@ import { ReactElement } from "react";
 
 const ShowcaseSegment = (): ReactElement => {
   return <div className='flex justify-center items-center w-full h-screen'>
-    COOL SHIT GOES HERE
+    <p>SHOWCASE THINGO</p>
   </div>
 }
 

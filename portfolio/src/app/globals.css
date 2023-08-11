@@ -1,15 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,700;1,100;1,300;1,700&display=swap');
 
 @layer base {
   h1 {
-    @apply text-PRIMARY text-7xl;
+    @apply text-PRIMARY text-7xl font-raleway;
   }
   h2 {
-    @apply text-SECONDARY text-4xl;
+    @apply text-SECONDARY text-4xl font-raleway;
   }
   p {
-    @apply text-NEUTRAL;
+    @apply text-NEUTRAL font-raleway;
+  }
+  li {
+    @apply text-NEUTRAL font-raleway;
   }
 }

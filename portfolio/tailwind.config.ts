@@ -9,15 +9,18 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'raleway': ['Raleway', 'sans-serif']
+      },
       colors: {
-        PRIMARY: '#0A9396',
-        SECONDARY: '#0A9396',
-        NEUTRAL_LIGHT: '',
-        NEUTRAL: '',
-        NEUTRAL_DARK: '',
-        BACKGROUND: '#0A9396',
-        BACKGROUND_START: '#000000',
-        BACKGROUND_END: '#FFFFFF',
+        PRIMARY: '#FFFFFF',
+        SECONDARY: '#DCF0F6',
+        NEUTRAL_LIGHT: '#FFFFFF',
+        NEUTRAL: '#EDF2F4',
+        NEUTRAL_DARK: '#8D99AE',
+        BACKGROUND: '#120A28',
+        BACKGROUND_START: '#080413',
+        BACKGROUND_END: '#080413',
       },
     },
   },
