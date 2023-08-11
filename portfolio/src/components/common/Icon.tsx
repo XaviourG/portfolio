@@ -1,6 +1,9 @@
 import { ReactElement } from "react";
 
 import InstagramIcon from "@/assets/instagram_icon";
+import LinkedinIcon from "@/assets/linkedin_icon";
+import EmailIcon from "@/assets/email_icon";
+import PhoneIcon from "@/assets/phone_icon";
 
 export interface IconProps {
   icon: string;
@@ -31,6 +34,9 @@ const Icon = ({
 }: IconProps): ReactElement => {
   const icons = {
     InstagramIcon,
+    LinkedinIcon,
+    EmailIcon,
+    PhoneIcon,
   };
 
   const Icon = icons[icon as keyof typeof icons]
