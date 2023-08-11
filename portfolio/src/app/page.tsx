@@ -1,5 +1,5 @@
-import ResponsiveRenderer from "@/layouts/ResponsiveRenderer";
 import { useState } from "react";
+import PortfolioBody from "./portfolioBody";
 
 // // Import the functions you need from the SDKs you need
 // import { initializeApp } from "firebase/app";
@@ -26,7 +26,7 @@ import { useState } from "react";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center">
-      <ResponsiveRenderer/>
+      <PortfolioBody/>
     </main>
   )
 }
