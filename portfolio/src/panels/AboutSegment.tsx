@@ -1,21 +1,28 @@
 import NavMenu from "@/components/menu/NavMenu";
+import SocialsMenu from "@/components/menu/SocialsMenu";
 import { ReactElement } from "react";
 
 const AboutSegment = (): ReactElement => {
   return <div className='flex flex-col justify-center items-center
-    xl:fixed xl:w-1/2 x: h-screen
-    static w-full h-full'>
-    <div className='p-16 pb-24'>
-      <h1 className='text-center xl:text-left'>
-        <span className="font-bold">XAVIOUR</span><br/>GREENHALGH
-      </h1>
-      <h2 className='text-center xl:text-left'>
-        SOFTWARE ENGINEER
-      </h2>
+    static w-full h-full
+    xl:fixed xl:w-1/2 xl:h-screen'>
+    <div className='flex p-12 xl:h-3/4 flex-col justify-between'>
+      <div className='flex flex-col pt-24 xl:pt-0'>
+        <h1 className='text-center xl:text-left text-4xl xl:text-7xl'>
+          <span className="font-bold">XAVIOUR</span><br/>GREENHALGH
+        </h1>
+        <h2 className='text-center xl:text-left text-xl xl:text-4xl'>
+          SOFTWARE ENGINEER
+        </h2>
+      </div>
 
       {/* MENU */}
       <div className='hidden xl:flex w-full'>
         <NavMenu/>
+      </div>
+
+      <div className='flex justify-center xl:justify-start'>
+        <SocialsMenu/>
       </div>
     </div>
   </div>

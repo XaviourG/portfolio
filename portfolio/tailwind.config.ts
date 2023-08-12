@@ -19,6 +19,7 @@ const config: Config = {
         NEUTRAL_LIGHT: '#FFFFFF',
         NEUTRAL_LIGHT50: '#FFFFFF50',
         NEUTRAL: '#EDF2F4',
+        NEUTRAL50: '#EDF2F450',
         NEUTRAL_DARK: '#8D99AE',
         BACKGROUND: '#120A28',
         BACKGROUND_START: '#080413',

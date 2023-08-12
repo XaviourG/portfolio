@@ -4,6 +4,7 @@ import InstagramIcon from "@/assets/instagram_icon";
 import LinkedinIcon from "@/assets/linkedin_icon";
 import EmailIcon from "@/assets/email_icon";
 import PhoneIcon from "@/assets/phone_icon";
+import GithubIcon from "@/assets/github_icon";
 
 export interface IconProps {
   icon: string;
@@ -37,6 +38,7 @@ const Icon = ({
     LinkedinIcon,
     EmailIcon,
     PhoneIcon,
+    GithubIcon,
   };
 
   const Icon = icons[icon as keyof typeof icons]

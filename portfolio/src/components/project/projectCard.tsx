@@ -19,7 +19,11 @@ const ProjectCard = ({
   duration-100'>
     <div className="w-full xl:w-1/4 max-h-24 flex justify-center pl-1 pr-2">
       <div className="w-full border-solid border-2 border-NEUTRAL_DARK bg-NEUTRAL_DARK rounded-2xl">
-        <img className="w-full h-full object-cover rounded-2xl" src={image} alt={title} />
+        <img
+          className="w-full h-full object-cover rounded-2xl"
+          src={image}
+          alt={title}
+        />
       </div>
     </div>
     <div className="w-3/4">

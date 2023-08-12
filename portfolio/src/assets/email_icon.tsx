@@ -1,7 +1,7 @@
-const EmailIcon = () => <svg xmlns="http://www.w3.org/2000/svg"
-viewBox="0 0 512 512"><rect
-width="100%" height="100%"
-rx="25%"
-fill="currentColor"/><rect width="356" height="256" x="78" y="128" fill="currentColor" rx="8%"/><path fill="none" stroke="#000000" stroke-width="20" d="M434 128L269 292c-7 8-19 8-26 0L78 128m0 256l129-128m227 128L305 256"/></svg>
+const EmailIcon = () =>
+<svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 7.00005L10.2 11.65C11.2667 12.45 12.7333 12.45 13.8 11.65L20 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+</svg>
 
 export default EmailIcon;
