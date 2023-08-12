@@ -26,7 +26,7 @@ const ProjectCard = ({
         />
       </div>
     </div>
-    <div className="w-full xl:w-2/3 pt-3 xl:pt-0">
+    <div className="w-full xl:w-2/q3 pt-3 xl:pt-0">
       <h3 className="text-inherit">{title}</h3>
       <p className="text-inherit pt-1 pb-1">{description}</p>
       <TechTags tags={tech}/>

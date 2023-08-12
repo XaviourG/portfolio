@@ -1,6 +1,6 @@
 const LinkedinIcon = () =>
 <svg fill="currentColor"  version="1.1" xmlns="http://www.w3.org/2000/svg"  width="100%"
-	 height="800px" viewBox="0 0 512 512">
+	 height="100%" viewBox="0 0 512 512">
 
 <g id="7935ec95c421cee6d86eb22ecd125aef">
 
