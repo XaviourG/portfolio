@@ -1,25 +1,38 @@
 'use client'
 
+
 import NavigationBar from "@/components/top_bar/NavigationBar";
 import AboutSegment from "@/panels/AboutSegment";
 import ContactSegment from "@/panels/ContactSegment";
 import ShowcaseSegment from "@/panels/ShowcaseSegment";
 import ProjectsSegment from "@/panels/ProjectsSegment";
-import { ReactElement } from "react"
+import { ReactElement, useRef } from "react"
+import { PageRefData } from "@/components/menu/PageRefData";
 
 const PortfolioBody = (): ReactElement => {
+  const aboutRef = useRef(null);
+  const projectsRef = useRef(null);
+  const contactRef = useRef(null);
+  const refData: PageRefData = {
+    aboutRef, projectsRef, contactRef
+  }
+
   return <div className='flex w-full flex-col'>
     <div className='flex xl:hidden w-full sticky top-0'>
       <NavigationBar/>
     </div>
-    <div className='flex w-full flex-col xl:flex-row'>
+    <div className='flex w-full flex-col xl:flex-row' ref={aboutRef}>
       <div className='flex flex-col w-full xl:w-1/2'>
-        <AboutSegment/>
+        <AboutSegment RefData={refData}/>
       </div>
       <div className='flex flex-col w-full xl:w-1/2'>
-        <ShowcaseSegment/>
-        <ProjectsSegment/>
-        <ContactSegment/>
+        <ShowcaseSegment />
+        <div className="flex w-full" ref={aboutRef}>
+          <ProjectsSegment/>
+        </div>
+        <div className="flex w-full" ref={aboutRef}>
+          <ContactSegment/>
+        </div>
       </div>
     </div>
   </div>

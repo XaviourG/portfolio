@@ -1,8 +1,15 @@
 import NavMenu from "@/components/menu/NavMenu";
+import { PageRefData } from "@/components/menu/PageRefData";
 import SocialsMenu from "@/components/menu/SocialsMenu";
 import { ReactElement } from "react";
 
-const AboutSegment = (): ReactElement => {
+interface props {
+  RefData: PageRefData,
+}
+
+const AboutSegment = ({
+  RefData
+}: props): ReactElement => {
   return <div className='flex flex-col justify-center items-center
     static w-full h-full
     xl:fixed xl:w-1/2 xl:h-screen'>
@@ -18,7 +25,7 @@ const AboutSegment = (): ReactElement => {
 
       {/* MENU */}
       <div className='hidden xl:flex w-full'>
-        <NavMenu/>
+        <NavMenu RefData={RefData}/>
       </div>
 
       <div className='flex justify-center xl:justify-start'>
