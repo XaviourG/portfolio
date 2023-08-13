@@ -20,6 +20,7 @@ export function Model(props) {
   return (
     <group {...props} dispose={null}>
       <mesh ref={meshRef}
+      scale={0.6}
         castShadow
         receiveShadow
         position={[0, 0, 0]}
