@@ -13,7 +13,7 @@ const SocialsMenu = (): ReactElement => <div className="flex pt-5 items-center">
     </a>
   </div>
   <div className="text-NEUTRAL_DARK hover:text-NEUTRAL p-3">
-    <a href="https://instagram.com/xaviourg">
+    <a href="https://instagram.com/yourlordandxaviour">
       <Icon icon="InstagramIcon" color="inherit" size="1.8rem"/>
     </a>
   </div>
