@@ -16,7 +16,7 @@ const ThreeJsShowcase = (): ReactElement => {
       <directionalLight position={[2, 1, 5]} />
       <ResumeModel hover={hover} setHover={setHover} setDownloading={setDownloading}/>
     </Canvas>
-    {(hover || downloading) && <div className="-translate-y-40 xl:-translate-y-96 h-0">
+    {(hover || downloading) && <div className="-translate-y-40 xl:-translate-y-60 h-0">
       <div className="pl-3 pr-3 pt-1 pb-1 m-1 bg-HIGHLIGHT75 rounded-full pointer-events-none">
         <p className="text-BACKGROUND text-xs xl:text-sm font-bold">{`${downloading ? 'DOWNLOADING...' : 'DOWNLOAD'}`}</p>
       </div>
