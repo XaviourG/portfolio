@@ -19,7 +19,7 @@ const PortfolioBody = (): ReactElement => {
 
   return <div className='flex w-full flex-col'>
     <div className='flex xl:hidden w-full sticky top-0 z-50'>
-      <NavigationBar/>
+      <NavigationBar RefData={refData}/>
     </div>
     <div className='flex w-full flex-col xl:flex-row' ref={aboutRef}>
       <div className='flex flex-col w-full xl:w-1/2'>
@@ -27,10 +27,10 @@ const PortfolioBody = (): ReactElement => {
       </div>
       <div className='flex flex-col w-full xl:w-1/2'>
         <ShowcaseSegment />
-        <div className="flex w-full" ref={aboutRef}>
+        <div className="flex w-full" ref={projectsRef}>
           <ProjectsSegment/>
         </div>
-        <div className="flex w-full" ref={aboutRef}>
+        <div className="flex w-full" ref={contactRef}>
           <ContactSegment/>
         </div>
       </div>
