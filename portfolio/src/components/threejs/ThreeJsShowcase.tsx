@@ -7,16 +7,17 @@ import TechTags from '../project/TechTags';
 
 const ThreeJsShowcase = (): ReactElement => {
   const [hover, setHover] = useState(false);
+  const [downloading, setDownloading] = useState(false);
  
-  return <div className="flex flex-col w-full h-full items-center">
+  return <div className="flex flex-col w-full h-screen items-center">
     <Canvas style={{height: '100%', width: '100%'}}>
       <OrbitControls enableZoom={false} />
       <ambientLight intensity={1} />
       <directionalLight position={[1, 1, 5]} />
-      <Model hover={hover} setHover={setHover}/>
+      <Model hover={hover} setHover={setHover} setDownloading={setDownloading}/>
     </Canvas>
-    {hover && <div className="-translate-y-96 h-0">
-      <TechTags tags={['DOWNLOAD']}/>
+    {(hover || downloading) && <div className="-translate-y-96 h-0">
+      <TechTags tags={[`${downloading ? 'DOWNLOADING...' : 'DOWNLOAD'}`]}/>
     </div>}
   </div>
 }

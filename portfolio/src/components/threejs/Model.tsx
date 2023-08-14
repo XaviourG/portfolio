@@ -8,12 +8,14 @@ import { useFrame } from "@react-three/fiber";
 
 interface props {
   hover: boolean,
-  setHover: (state: boolean) => void
+  setHover: (state: boolean) => void,
+  setDownloading: (state: boolean) => void,
 }
 
 export function Model({
   hover,
   setHover,
+  setDownloading,
 }: props) {
   const resumeTexture = useTexture('resume.png')
   const downloadTexture = useTexture('circuit_texture.jpg')
@@ -39,6 +41,22 @@ export function Model({
     setHover(false);
   }
 
+  const downloadResume = () => {
+    setDownloading(true);
+    fetch('xaviour_g_resume.pdf').then(response => {
+      response.blob().then(blob => {
+          // Creating new object of PDF file
+          const fileURL = window.URL.createObjectURL(blob);
+          // Setting various property values
+          let alink = document.createElement('a');
+          alink.href = fileURL;
+          alink.download = 'xaviour_g_resume.pdf';
+          alink.click();
+          setDownloading(false);
+      });
+    });
+  };
+
   return (
     <group dispose={null}>
       <mesh ref={meshRef}
@@ -49,6 +67,7 @@ export function Model({
         rotation={[0,0,-0.2]}
         onPointerEnter={(e) => mouseEnter()}
         onPointerLeave={(e) => mouseLeave()}
+        onClick={(e) => downloadResume()}
       >
         <boxGeometry args={[21, 29.7, 0.5]}/>
         <meshStandardMaterial map={colorMap} />
