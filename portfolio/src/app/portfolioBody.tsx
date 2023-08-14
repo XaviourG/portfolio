@@ -1,7 +1,7 @@
 'use client'
 
 
-import NavigationBar from "@/components/top_bar/NavigationBar";
+import NavigationBar from "@/components/menu/NavigationBar";
 import AboutSegment from "@/panels/AboutSegment";
 import ContactSegment from "@/panels/ContactSegment";
 import ShowcaseSegment from "@/panels/ShowcaseSegment";
@@ -18,7 +18,7 @@ const PortfolioBody = (): ReactElement => {
   }
 
   return <div className='flex w-full flex-col'>
-    <div className='flex xl:hidden w-full sticky top-0'>
+    <div className='flex xl:hidden w-full sticky top-0 z-50'>
       <NavigationBar/>
     </div>
     <div className='flex w-full flex-col xl:flex-row' ref={aboutRef}>

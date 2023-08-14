@@ -14,13 +14,13 @@ const ProjectCard = ({
   tech,
   description,
 }: props): ReactElement => {
-  return <div className='flex flex-col xl:flex-row p-8 m-8 text-inherit filter saturate-50 hover:saturate-100
+  return <div className='flex flex-col xl:flex-row p-8 m-8 text-inherit filter saturate-50 hover:saturate-100 z-10
   hover:text-NEUTRAL_LIGHT
   duration-100'>
     <div className="w-full xl:w-1/3 max-h-32 flex justify-center pl-1 pr-2">
       <div className="w-full border-solid border-2 border-NEUTRAL_DARK bg-NEUTRAL_DARK rounded-2xl">
         <img
-          className="w-full h-full object-cover rounded-2xl"
+          className="w-full h-full object-cover rounded-2xl z-10"
           src={image}
           alt={title}
         />
