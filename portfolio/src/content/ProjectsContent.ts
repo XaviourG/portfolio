@@ -36,7 +36,7 @@ const ProjectsContent: ProjectContent[] = [
     description: "A basic data analysis toolkit for summarising, formating, and extracting information from spreadsheets and pdfs. Initaly developed for parsing recipies from commercial pdfs, later adapted to summarising legacy patient health data.",
   },
   {
-    title: 'TTRPG Senario Generator',
+    title: 'TTRPG Scenario Generator',
     subtitle: 'Web Based Language Generation Service',
     image: 'https://cdn.discordapp.com/attachments/1140589185221275770/1140589353794555985/ttrpg_prompter_project.png',
     tech: ['JavaScript', 'CSS', 'HTML'],
