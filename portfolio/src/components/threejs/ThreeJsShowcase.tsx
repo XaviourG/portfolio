@@ -1,16 +1,24 @@
-import React, { Component, ReactElement } from 'react';
+import React, { Component, ReactElement, useState } from 'react';
 import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Environment } from "@react-three/drei";
 import { Model } from './Model';
+import TechTags from '../project/TechTags';
 
 const ThreeJsShowcase = (): ReactElement => {
-  return <Canvas style={{height: '100%', width: '100%'}}>
+  const [hover, setHover] = useState(false);
+ 
+  return <div className="flex flex-col w-full h-full items-center">
+    <Canvas style={{height: '100%', width: '100%'}}>
       <OrbitControls enableZoom={false} />
       <ambientLight intensity={1} />
       <directionalLight position={[1, 1, 5]} />
-      <Model/>
-  </Canvas>
+      <Model hover={hover} setHover={setHover}/>
+    </Canvas>
+    {hover && <div className="-translate-y-96 h-0">
+      <TechTags tags={['DOWNLOAD']}/>
+    </div>}
+  </div>
 }
 
 export default ThreeJsShowcase;

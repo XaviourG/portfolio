@@ -13,6 +13,9 @@ const config: Config = {
       'body': ['var(--font-main)', 'sans-serif']
     },
     extend: {
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+      },
       colors: {
         PRIMARY: '#FFFFFF',
         SECONDARY: '#DCF0F6',
