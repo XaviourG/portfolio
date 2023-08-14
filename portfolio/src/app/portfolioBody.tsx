@@ -21,7 +21,7 @@ const PortfolioBody = (): ReactElement => {
     <div className='flex xl:hidden w-full sticky top-0 z-50'>
       <NavigationBar RefData={refData}/>
     </div>
-    <div className='flex w-full flex-col xl:flex-row' ref={aboutRef}>
+    <div className='flex w-full flex-col xl:flex-row ' ref={aboutRef}>
       <div className='flex flex-col w-full xl:w-1/2'>
         <AboutSegment RefData={refData}/>
       </div>
