@@ -20,6 +20,8 @@ const config: Config = {
         PRIMARY: '#FFFFFF',
         SECONDARY: '#DCF0F6',
         SECONDARY50: '#DCF0F650',
+        HIGHLIGHT: '#FE2F20',
+        HIGHLIGHT75: '#FE2F2075',
         NEUTRAL_LIGHT: '#FFFFFF',
         NEUTRAL_LIGHT50: '#FFFFFF50',
         NEUTRAL: '#EDF2F4',
