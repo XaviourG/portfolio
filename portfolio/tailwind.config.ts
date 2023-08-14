@@ -10,7 +10,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        'raleway': ['Raleway', 'sans-serif']
+        'display': ['Barlow', 'sans-serif'],
+        'body': ['Poppins', 'sans-serif']
       },
       colors: {
         PRIMARY: '#FFFFFF',

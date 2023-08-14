@@ -1,22 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,700;1,100;1,300;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&family=Bebas+Neue&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 @layer base {
   h1 {
-    @apply text-PRIMARY text-7xl font-raleway;
+    @apply text-PRIMARY text-7xl font-display;
   }
   h2 {
-    @apply text-SECONDARY text-4xl font-raleway;
+    @apply text-SECONDARY text-4xl font-body;
   }
   h3 {
-    @apply text-PRIMARY text-xl font-raleway;
+    @apply text-PRIMARY text-xl font-body;
   }
   p {
-    @apply text-NEUTRAL font-raleway;
+    @apply text-NEUTRAL font-body;
   }
   li {
-    @apply text-NEUTRAL font-raleway;
+    @apply text-NEUTRAL font-body;
   }
 }

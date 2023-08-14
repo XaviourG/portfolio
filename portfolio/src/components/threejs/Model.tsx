@@ -7,33 +7,28 @@ import { useGLTF, useTexture } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 
 export function Model(props) {
-  const { nodes, materials } = useGLTF("/software_engineer_3d.gltf");
-  const colorMap = useTexture('/circuit_texture.jpg');
-
+  const colorMap = useTexture('resume.png')
   const meshRef = React.useRef();
 
   useFrame(({ clock }) => {
     const a = clock.getElapsedTime();
-    meshRef.current.rotation.z = a/2;
+    meshRef.current.rotation.y = -a/3;
   });
 
   return (
     <group {...props} dispose={null}>
       <mesh ref={meshRef}
-      scale={0.6}
+        scale={0.1}
         castShadow
         receiveShadow
         position={[0, 0, 0]}
-        rotation={[1.4,0.1,0.25]}
-        geometry={nodes.Text.geometry}
-        material={nodes.Text.material}
+        rotation={[0,0,-0.2]}
       >
-      <meshStandardMaterial
-        map={colorMap}
-      />
+        <boxGeometry args={[21, 29.7, 0.5]}/>
+        <meshStandardMaterial map={colorMap} />
       </mesh>
     </group>
   );
 }
 
-useGLTF.preload("/software_engineer_3d.gltf");
+useGLTF.preload("/bussiness_card.gltf");

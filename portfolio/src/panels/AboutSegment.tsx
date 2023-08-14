@@ -18,7 +18,10 @@ const AboutSegment = ({
         <h1 className='text-center xl:text-left text-4xl xl:text-7xl'>
           <span className="font-bold">XAVIOUR</span><br/>GREENHALGH
         </h1>
-        <h2 className='text-center xl:text-left text-xl xl:text-4xl'>
+        <h2 className='font-display text-center xl:text-left text-xl xl:text-4xl'>
+          SOFTWARE ENGINEER
+        </h2>
+        <h2 className='font-body text-center xl:text-left text-xl xl:text-4xl'>
           SOFTWARE ENGINEER
         </h2>
       </div>
