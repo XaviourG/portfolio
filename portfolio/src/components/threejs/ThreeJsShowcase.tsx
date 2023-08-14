@@ -11,8 +11,8 @@ const ThreeJsShowcase = (): ReactElement => {
   return <div className="flex flex-col w-full items-center" style={{height: '50vh'}}>
     <Canvas style={{height: '100%', width: '100%'}}>
       <OrbitControls enableZoom={false} />
-      <ambientLight intensity={1} />
-      <directionalLight position={[1, 1, 5]} />
+      <ambientLight intensity={2} />
+      <directionalLight position={[2, 1, 5]} />
       <Model hover={hover} setHover={setHover} setDownloading={setDownloading}/>
     </Canvas>
     {(hover || downloading) && <div className="-translate-y-40 xl:-translate-y-96 h-0">

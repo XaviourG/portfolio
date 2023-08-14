@@ -10,7 +10,7 @@ interface props {
 const AboutSegment = ({
   RefData
 }: props): ReactElement => {
-  return <div className='flex flex-col justify-center items-center xl:items-start xl:pl-16
+  return <div className='flex flex-col justify-center items-center xl:items-start xl:pl-20
     static w-full h-full
     xl:fixed xl:w-1/2 xl:h-screen'>
     <div className='flex p-12 xl:h-4/5 flex-col justify-between'>
