@@ -3,6 +3,7 @@ import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Environment } from "@react-three/drei";
 import { Model } from './Model';
+import { ResumeModel } from './ResumeModel';
 
 const ThreeJsShowcase = (): ReactElement => {
   const [hover, setHover] = useState(false);
@@ -13,7 +14,7 @@ const ThreeJsShowcase = (): ReactElement => {
       <OrbitControls enableZoom={false} />
       <ambientLight intensity={2} />
       <directionalLight position={[2, 1, 5]} />
-      <Model hover={hover} setHover={setHover} setDownloading={setDownloading}/>
+      <ResumeModel hover={hover} setHover={setHover} setDownloading={setDownloading}/>
     </Canvas>
     {(hover || downloading) && <div className="-translate-y-40 xl:-translate-y-96 h-0">
       <div className="pl-3 pr-3 pt-1 pb-1 m-1 bg-HIGHLIGHT75 rounded-full pointer-events-none">
