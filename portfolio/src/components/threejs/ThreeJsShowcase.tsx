@@ -2,7 +2,6 @@ import React, { Component, ReactElement, useState } from 'react';
 import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Environment } from "@react-three/drei";
-import { Model } from './Model';
 import { ResumeModel } from './ResumeModel';
 
 const ThreeJsShowcase = (): ReactElement => {
