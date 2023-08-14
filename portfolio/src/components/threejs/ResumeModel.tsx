@@ -1,6 +1,7 @@
 import React, { Ref, useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
+import { Group } from "next/dist/shared/lib/router/utils/route-regex";
 
 interface thing {
   rotation: {
@@ -8,6 +9,11 @@ interface thing {
     y: number,
     z: number,
   }
+}
+
+interface gltfThing {
+  nodes: any,
+  materials: any,
 }
 
 interface props {
@@ -21,7 +27,7 @@ export function ResumeModel({
   setHover,
   setDownloading,
 }: props) {
-  const { nodes, materials } = useGLTF("/3d-resume.gltf");
+  const { nodes, materials } = (useGLTF("/3d-resume.gltf") as unknown as gltfThing);
   const meshRef = React.useRef();
 
   useFrame(({ clock }) => {
@@ -61,7 +67,7 @@ export function ResumeModel({
 
   return (
     <group dispose={null} scale={0.075}>
-      <group ref={meshRef} scale={[29.7, 0.2, 21]}
+      <group ref={meshRef as unknown as Ref<THREE.Group> | undefined} scale={[29.7, 0.2, 21]}
         castShadow
         receiveShadow
         position={[0, 0, 0]}

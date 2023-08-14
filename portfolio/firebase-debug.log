@@ -201,3 +201,67 @@ Type error: 'meshRef.current' is possibly 'undefined'.
 [debug] [2023-08-14T09:56:00.433Z] Error: ENOENT: no such file or directory, open '/Users/xaviourgreenhalgh/Desktop/Projects/portolfio_v1/portfolio/.next/export-marker.json'
 [error] 
 [error] Error: An unexpected error has occurred.
+[debug] [2023-08-14T09:56:24.901Z] ----------------------------------------------------------------------
+[debug] [2023-08-14T09:56:24.903Z] Command:       /opt/homebrew/Cellar/node@16/16.18.0/bin/node /opt/homebrew/bin/firebase deploy
+[debug] [2023-08-14T09:56:24.903Z] CLI Version:   12.4.7
+[debug] [2023-08-14T09:56:24.903Z] Platform:      darwin
+[debug] [2023-08-14T09:56:24.904Z] Node Version:  v16.18.0
+[debug] [2023-08-14T09:56:24.904Z] Time:          Mon Aug 14 2023 19:56:24 GMT+1000 (Australian Eastern Standard Time)
+[debug] [2023-08-14T09:56:24.905Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-08-14T09:56:24.975Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-14T09:56:24.976Z] > authorizing via signed-in user (xaviourgreenhalgh@gmail.com)
+[debug] [2023-08-14T09:56:24.976Z] [iam] checking project portfolio-xaviourg for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-08-14T09:56:24.978Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-xaviourg:testIamPermissions [none]
+[debug] [2023-08-14T09:56:24.978Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-xaviourg:testIamPermissions x-goog-quota-user=projects/portfolio-xaviourg
+[debug] [2023-08-14T09:56:24.978Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-xaviourg:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-08-14T09:56:26.100Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-xaviourg:testIamPermissions 200
+[debug] [2023-08-14T09:56:26.101Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-xaviourg:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-08-14T09:56:26.103Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-xaviourg [none]
+[debug] [2023-08-14T09:56:26.720Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-xaviourg 200
+[debug] [2023-08-14T09:56:26.721Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-xaviourg {"projectId":"portfolio-xaviourg","projectNumber":"619065439685","displayName":"portfolio","name":"projects/portfolio-xaviourg","resources":{"hostingSite":"portfolio-xaviourg"},"state":"ACTIVE","etag":"1_701c187b-4482-4926-a99b-61e15a42bb0c"}
+[debug] [2023-08-14T09:56:28.669Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/portfolio-xaviourg/sites pageToken=&pageSize=10
+[debug] [2023-08-14T09:56:30.059Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/portfolio-xaviourg/sites 200
+[debug] [2023-08-14T09:56:30.060Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/portfolio-xaviourg/sites {"sites":[{"name":"projects/portfolio-xaviourg/sites/portfolio-xaviourg","defaultUrl":"https://portfolio-xaviourg.web.app","appId":"1:619065439685:web:da16a628b3e2e22c80c7ac","type":"DEFAULT_SITE"}]}
+[debug] [2023-08-14T09:56:30.061Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:619065439685:web:da16a628b3e2e22c80c7ac/config [none]
+[debug] [2023-08-14T09:56:31.400Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:619065439685:web:da16a628b3e2e22c80c7ac/config 200
+[debug] [2023-08-14T09:56:31.400Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:619065439685:web:da16a628b3e2e22c80c7ac/config {"projectId":"portfolio-xaviourg","appId":"1:619065439685:web:da16a628b3e2e22c80c7ac","storageBucket":"portfolio-xaviourg.appspot.com","apiKey":"AIzaSyA5WlhPdI7xWukc9QjnxZ4kYn-r8hDgy2w","authDomain":"portfolio-xaviourg.firebaseapp.com","messagingSenderId":"619065439685","measurementId":"G-E1NKFLC7JW"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[info] - info Creating an optimized production build...
+
+[info] - info Compiled successfully
+
+[info] - info Linting and checking validity of types...
+
+[info] 
+./src/components/project/ProjectCard.tsx
+24:9  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+
+[info] Failed to compile.
+
+
+[info] ./src/components/threejs/ResumeModel.tsx:24:11
+Type error: Property 'nodes' does not exist on type 'GLTF'.
+
+  22 |   setDownloading,
+  23 | }: props) {
+> 24 |   const { nodes, materials } = useGLTF("/3d-resume.gltf");
+     |           ^
+  25 |   const meshRef = React.useRef();
+  26 | 
+  27 |   useFrame(({ clock }) => {
+
+[debug] [2023-08-14T09:56:48.905Z] Error: ENOENT: no such file or directory, open '/Users/xaviourgreenhalgh/Desktop/Projects/portolfio_v1/portfolio/.next/export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
