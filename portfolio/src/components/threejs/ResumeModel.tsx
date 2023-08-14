@@ -1,6 +1,14 @@
-import React, { useRef } from "react";
+import React, { Ref, useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
+
+interface thing {
+  rotation: {
+    x: number,
+    y: number,
+    z: number,
+  }
+}
 
 interface props {
   hover: boolean,
@@ -19,9 +27,9 @@ export function ResumeModel({
   useFrame(({ clock }) => {
     const a = clock.getElapsedTime();
     if (!hover) {
-      meshRef.current.rotation.y += 0.01
+      (meshRef.current as unknown as thing).rotation.y += 0.01
     } else {
-      meshRef.current.rotation.y += 0.005
+      (meshRef.current  as unknown as thing).rotation.y += 0.005
     }
   });
 
