@@ -17,9 +17,7 @@ export function Model({
   setHover,
   setDownloading,
 }: props) {
-  const resumeTexture = useTexture('resume.png')
-  const downloadTexture = useTexture('circuit_texture.jpg')
-  let colorMap = resumeTexture;
+  const colorMap = useTexture('resume.png')
   const meshRef = React.useRef();
 
   useFrame(({ clock }) => {

@@ -9,7 +9,7 @@ interface props {
 const ProjectList = ({
   content
 }: props): ReactElement => {
-  return <div className=' p-0 m-0 xl:pt-8 xl:m-8 text-NEUTRAL_LIGHT hover:text-NEUTRAL_LIGHT50 duration-200 z-10'>
+  return <div className=' p-0 m-0 xl:pt-8 xl:m-8 text-NEUTRAL_LIGHT50 duration-200 z-10'>
     {content.map((project, key) => <div key={key}>
       <ProjectCard {...project}/>
     </div>)}

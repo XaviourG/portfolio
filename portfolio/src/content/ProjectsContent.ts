@@ -30,7 +30,7 @@ const ProjectsContent: ProjectContent[] = [
   },
   {
     title: 'Ragnarok Racer',
-    subtitle: 'Exe Platforming Game',
+    subtitle: 'Windows Platforming Game',
     image: 'https://e1.pxfuel.com/desktop-wallpaper/280/759/desktop-wallpaper-funniest-group-weird-stuff-thumbnail.jpg',
     tech: ['Java', 'Sonarcloud', 'Javadoc'],
     description: "A collaborative 28 person university project I led, it oversaw the design and development of a physics engine, NPC AI, sprite loader, and level builder.",
