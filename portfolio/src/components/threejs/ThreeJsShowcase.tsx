@@ -9,7 +9,7 @@ const ThreeJsShowcase = (): ReactElement => {
   const [hover, setHover] = useState(false);
   const [downloading, setDownloading] = useState(false);
  
-  return <div className="flex flex-col w-full h-screen items-center">
+  return <div className="flex flex-col w-full items-center" style={{height: '50vh'}}>
     <Canvas style={{height: '100%', width: '100%'}}>
       <OrbitControls enableZoom={false} />
       <ambientLight intensity={1} />

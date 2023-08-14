@@ -60,7 +60,7 @@ export function Model({
   return (
     <group dispose={null}>
       <mesh ref={meshRef}
-        scale={0.1}
+        scale={0.15}
         castShadow
         receiveShadow
         position={[0, 0, 0]}
