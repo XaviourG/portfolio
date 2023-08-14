@@ -21,9 +21,6 @@ const AboutSegment = ({
         <h2 className='font-display text-center xl:text-left text-xl xl:text-4xl'>
           SOFTWARE ENGINEER
         </h2>
-        <h2 className='font-body text-center xl:text-left text-xl xl:text-4xl'>
-          SOFTWARE ENGINEER
-        </h2>
       </div>
 
       {/* MENU */}

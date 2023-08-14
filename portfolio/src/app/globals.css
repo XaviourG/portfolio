@@ -1,8 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&family=Bebas+Neue&display=swap');
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 @layer base {
   h1 {

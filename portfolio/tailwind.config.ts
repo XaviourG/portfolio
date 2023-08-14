@@ -8,11 +8,11 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    fontFamily: {
+      'display': ["var(--font-main)", 'sans-serif'],
+      'body': ['var(--font-main)', 'sans-serif']
+    },
     extend: {
-      fontFamily: {
-        'display': ['Barlow', 'sans-serif'],
-        'body': ['Poppins', 'sans-serif']
-      },
       colors: {
         PRIMARY: '#FFFFFF',
         SECONDARY: '#DCF0F6',

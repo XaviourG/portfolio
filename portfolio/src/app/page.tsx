@@ -23,10 +23,17 @@ import PortfolioBody from "./portfolioBody";
 // const app = initializeApp(firebaseConfig);
 // const analytics = getAnalytics(app);
 
+import { Kanit } from "next/font/google";
+
+const mainFont = Kanit({
+  weight: '400',
+  subsets: ["latin"],
+  variable: "--font-main"
+})
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center 
-    bg-gradient-to-bl from-BACKGROUND_START via-BACKGROUND to-BACKGROUND_END">
+    <main className={`${mainFont.variable} flex min-h-screen flex-col items-center bg-gradient-to-bl from-BACKGROUND_START via-BACKGROUND to-BACKGROUND_END`}>
       <PortfolioBody/>
     </main>
   )
