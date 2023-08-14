@@ -15,7 +15,9 @@ const AboutSegment = ({
     xl:fixed xl:w-1/2 xl:h-screen'>
     <div className='flex p-12 xl:h-4/5 flex-col justify-between'>
       <div className='flex flex-col pt-24 xl:pt-0'>
-        <h1 className='text-center xl:text-left text-5xl xl:text-7xl'>
+        <h1 className='text-center xl:text-left text-5xl xl:text-7xl' style={{
+          textShadow: '#CBBEEF 0px 0 2px'
+        }}>
           <span className="font-bold">XAVIOUR</span><br/>GREENHALGH
         </h1>
         <h2 className='font-display text-center xl:text-left text-xl xl:text-4xl'>
