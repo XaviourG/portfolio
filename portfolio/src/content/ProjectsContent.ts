@@ -15,6 +15,13 @@ const ProjectsContent: ProjectContent[] = [
     description: "Architected, designed, developed, launched and maintained as team lead then later CEO of Organelle. Machine learning driven blood testing analysis, clinical data pipelines, telehealth consultations, full eCommerce capabilities, and dual practitioner/client interfaces.",
   },
   {
+    title: 'UpskillR',
+    subtitle: 'AI Based Youth Worker Training',
+    image: 'https://cdn.discordapp.com/attachments/1140589185221275770/1141898325327614105/desktop_frame_1.png',
+    tech: ['GPT-API', 'Speech-to-Text', 'Text-to-speech', 'TypeScript', 'React', 'Vite', 'SWC', 'Firebase'],
+    description: "A web prototype of a training system for government youth workers. Integrates voice to text with a chat GPT wrapper to allow trainees to 'talk' to a simulated client, mimics criminal youth behaviour, provides feedback on interview skills.",
+  },
+  {
     title: 'XaviourG.com 2.0',
     subtitle: 'Web Portfolio',
     image: 'https://cdn.discordapp.com/attachments/1140589185221275770/1140591100109783060/image.png',
