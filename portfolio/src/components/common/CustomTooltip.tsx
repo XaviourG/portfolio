@@ -16,6 +16,7 @@ const CustomTooltip = ({
   const [weakFocus, setWeakFocus] = useState(false);
   const [strongFocus, setStrongFocus] = useState(false);
   const [isBelowMidpoint, setIsBelowMidpoint] = useState(false);
+  const [revealing, setRevealing] = useState(false);
 
   const ref = useRef<HTMLDivElement>(null);
 
@@ -28,6 +29,7 @@ const CustomTooltip = ({
 
   const mouseEnter = () => {
     setWeakFocus(true);
+    setRevealing(true);
     if (!strongFocus && focusHook) {
       focusHook(true);
     }
@@ -35,6 +37,7 @@ const CustomTooltip = ({
 
   const mouseLeave = () => {
     setWeakFocus(false);
+    setRevealing(false);
     if (!strongFocus && focusHook) {
       focusHook(true);
     }
@@ -68,26 +71,25 @@ const CustomTooltip = ({
 
   return (
     <div ref={ref}
-      className="flex flex-col items-center"
+      className="flex flex-col items-center duration-500"
       onMouseEnter={mouseEnter}
       onMouseLeave={mouseLeave}
       onClick={click}
     >
 
-    {
-    showAbove() &&
-      <div className=" duration-500 w-0 h-0 relative">
-        <div className="rounded-2xl bg-NEUTRAL_LIGHT duration-500 z-50" style={{
+    { showAbove() &&
+      <div className={"w-0 h-0 relative"}>
+        <div className="rounded-2xl bg-NEUTRAL_LIGHT" style={{
           position: 'absolute',
           bottom: 0,
-          left: '-9rem',
+          left: '-11rem',
         }}>
           {tooltip}
         </div>
       </div>
-    }
+    } 
 
-    <div ref={ref} className={`flex flex-col items-center duration-500
+    <div ref={ref} className={`flex flex-col items-center
     ${showAbove() ? 'bg-NEUTRAL_LIGHT rounded-b-2xl' : ''}
     ${showBelow() ? 'bg-NEUTRAL_LIGHT rounded-t-2xl' : ''}`}>
       {children}
@@ -95,11 +97,11 @@ const CustomTooltip = ({
 
     {
     showBelow() &&
-    <div className=" duration-500 w-0 h-0 relative z-50">
-      <div className="rounded-2xl bg-NEUTRAL_LIGHT duration-500" style={{
+    <div className="w-0 h-0 relative z-50">
+      <div className="rounded-2xl bg-NEUTRAL_LIGHT" style={{
         position: 'absolute',
         top: 0,
-        left: '-9rem',
+        left: '-11rem',
       }}>
         {tooltip}
       </div>
