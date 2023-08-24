@@ -14,8 +14,9 @@ const PortfolioBody = (): ReactElement => {
   const aboutRef = useRef(null);
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
+  const skillsRef = useRef(null);
   const refData: PageRefData = {
-    aboutRef, projectsRef, contactRef
+    aboutRef, projectsRef, contactRef, skillsRef
   }
 
   return <div className='flex w-full flex-col'>
@@ -31,13 +32,13 @@ const PortfolioBody = (): ReactElement => {
       </div>
       <div className='flex flex-col w-full xl:w-1/2'>
         <ShowcaseSegment />
-        <div className="flex w-full" ref={projectsRef}>
-          <ProjectsSegment/>
-        </div>
         <div className="flex w-full" ref={contactRef}>
           <SkillsSegment/>
         </div>
-        <div className="flex w-full" ref={contactRef}>
+        <div className="flex w-full" ref={projectsRef}>
+          <ProjectsSegment/>
+        </div>
+        <div className="flex w-full" ref={skillsRef}>
           <ContactSegment/>
         </div>
       </div>
