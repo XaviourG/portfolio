@@ -41,7 +41,7 @@ const Skillset = ({
   }
 
   return (
-    <div className="flex flex-col w-full items-center m-16 rounded-2xl bg-NEUTRAL_DARK">
+    <div className="flex flex-col w-full items-center m-16 rounded-2xl">
       <HoverableSkill content={testSkill}/>
     </div>
   );
