@@ -4,12 +4,14 @@ interface Props {
   tooltip: React.ReactNode,
   children: React.ReactNode,
   forceState?: boolean | null,
+  focusHook?: (focus: boolean) => void | null,
 }
 
 const CustomTooltip = ({
   tooltip,
   children,
   forceState = null,
+  focusHook,
 }: Props): ReactElement => {
   const [weakFocus, setWeakFocus] = useState(false);
   const [strongFocus, setStrongFocus] = useState(false);
@@ -25,14 +27,24 @@ const CustomTooltip = ({
 
   const mouseEnter = () => {
     setWeakFocus(true);
+    if (!strongFocus && focusHook) {
+      focusHook(true);
+    }
   }
 
   const mouseLeave = () => {
     setWeakFocus(false);
+    if (!strongFocus && focusHook) {
+      focusHook(true);
+    }
   }
 
   const click = () => {
-    setStrongFocus(!strongFocus);
+    const focus = !strongFocus;
+    setStrongFocus(focus);
+    if (focusHook) {
+      focusHook(focus);
+    }
   }
 
   const showAbove = (): boolean => {
