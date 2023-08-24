@@ -18,4 +18,7 @@
   li {
     @apply text-NEUTRAL font-body;
   }
+  .font-outline-2 {
+    -webkit-text-stroke: 2px red;
+  }
 }

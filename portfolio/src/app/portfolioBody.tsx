@@ -32,13 +32,13 @@ const PortfolioBody = (): ReactElement => {
       </div>
       <div className='flex flex-col w-full xl:w-1/2'>
         <ShowcaseSegment />
-        <div className="flex w-full" ref={contactRef}>
+        <div className="flex w-full" ref={skillsRef}>
           <SkillsSegment/>
         </div>
         <div className="flex w-full" ref={projectsRef}>
           <ProjectsSegment/>
         </div>
-        <div className="flex w-full" ref={skillsRef}>
+        <div className="flex w-full" ref={contactRef}>
           <ContactSegment/>
         </div>
       </div>

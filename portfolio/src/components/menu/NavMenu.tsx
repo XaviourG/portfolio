@@ -15,7 +15,7 @@ const NavMenu = ({
       onClick={() => RefData.aboutRef.current?.scrollIntoView({ behavior: 'smooth' })}
     >
       <div className="flex rounded-full border-solid border-2 border-inherit w-7 h-7"> </div>
-      <p className="text-inherit text-3xl font-bold pl-3">
+      <p className="text-inherit text-2xl font-bold pl-3">
         About
       </p>
     </div>
@@ -25,7 +25,7 @@ const NavMenu = ({
       onClick={() => RefData.skillsRef.current?.scrollIntoView({ behavior: 'smooth' })}
     >
       <div className="flex rounded-full border-solid border-2 border-inherit w-7 h-7"> </div>
-      <p className="text-inherit text-3xl font-bold pl-3">
+      <p className="text-inherit text-2xl font-bold pl-3">
         Skillset
       </p>
     </div>
@@ -35,7 +35,7 @@ const NavMenu = ({
       onClick={() => RefData.projectsRef.current?.scrollIntoView({ behavior: 'smooth' })}
     >
       <div className="flex rounded-full border-solid border-2 border-inherit w-7 h-7"> </div>
-      <p className="text-inherit text-3xl font-bold pl-3">
+      <p className="text-inherit text-2xl font-bold pl-3">
         Projects
       </p>
     </div>
@@ -45,7 +45,7 @@ const NavMenu = ({
       onClick={() => RefData.contactRef.current?.scrollIntoView({ behavior: 'smooth' })}
     >
       <div className="flex rounded-full border-solid border-2 border-inherit w-7 h-7"> </div>
-      <p className="text-inherit text-3xl font-bold pl-3">
+      <p className="text-inherit text-2xl font-bold pl-3">
         Contact
       </p>
     </div>
