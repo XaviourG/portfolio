@@ -78,10 +78,10 @@ const CustomTooltip = ({
     >
 
     { showAbove() &&
-      <div className={"w-0 h-0 relative"}>
+      <div className={"w-0 h-0 relative z-40"}>
         <div className="rounded-2xl bg-NEUTRAL_LIGHT" style={{
           position: 'absolute',
-          bottom: 0,
+          bottom: -10,
           left: '-11rem',
         }}>
           {tooltip}
@@ -90,17 +90,17 @@ const CustomTooltip = ({
     } 
 
     <div ref={ref} className={`flex flex-col items-center
-    ${showAbove() ? 'bg-NEUTRAL_LIGHT rounded-b-2xl' : ''}
-    ${showBelow() ? 'bg-NEUTRAL_LIGHT rounded-t-2xl' : ''}`}>
+    ${showAbove() ? 'bg-NEUTRAL_LIGHT rounded-b-2xl z-50' : ''}
+    ${showBelow() ? 'bg-NEUTRAL_LIGHT rounded-t-2xl z-50' : ''}`}>
       {children}
     </div>
 
     {
     showBelow() &&
-    <div className="w-0 h-0 relative z-50">
+    <div className="w-0 h-0 relative z-40">
       <div className="rounded-2xl bg-NEUTRAL_LIGHT" style={{
         position: 'absolute',
-        top: 0,
+        top: -10,
         left: '-11rem',
       }}>
         {tooltip}
