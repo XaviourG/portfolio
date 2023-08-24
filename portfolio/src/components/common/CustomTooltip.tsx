@@ -69,6 +69,17 @@ const CustomTooltip = ({
     return () => window.removeEventListener("scroll", handleScroll);
   }, [isBelowMidpoint]);
 
+  const leftShift = (): string => {
+    if (ref.current) {
+      if (ref.current.offsetLeft < 100) {
+        return '-4.5rem';
+      } else if ((window.innerWidth - ref.current.offsetLeft) < 150) {
+        return '-18rem';
+      }
+    }
+    return '-11rem';
+  }
+
   return (
     <div ref={ref}
       className="flex flex-col items-center duration-500"
@@ -82,7 +93,7 @@ const CustomTooltip = ({
         <div className="rounded-2xl bg-SECONDARY" style={{
           position: 'absolute',
           bottom: -10,
-          left: '-11rem',
+          left: leftShift(),
         }}>
           {tooltip}
         </div>
@@ -101,7 +112,7 @@ const CustomTooltip = ({
       <div className="rounded-2xl bg-SECONDARY" style={{
         position: 'absolute',
         top: -10,
-        left: '-11rem',
+        left: leftShift(),
       }}>
         {tooltip}
       </div>

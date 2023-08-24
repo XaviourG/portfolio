@@ -42,7 +42,8 @@ const Skillset = ({
   }
 
   return (
-    <div className="flex flex-col w-full items-center m-16 rounded-2xl">
+    <div className="flex flex-col w-full items-center m-2 xk:m-16 mt-16 mb-16 rounded-2xl">
+      <p className="text-xl text-SECONDARY">Skillset</p>
       <SkillCloud skills={skills}/>
     </div>
   );
