@@ -1,24 +1,21 @@
 import { ReactElement, useCallback } from "react";
-import SubSkills from "./SubSkills";
-import SkillBar from "./SkillBar";
+import HoverableSkill from "./HoverableSkill";
 
-export interface MainSkill {
+export interface CodeSkill {
   name: string,
   commercial: number,
   personal: number,
 }
 
 interface Props {
-  mainSkills: MainSkill[],
-  subSkills: string[],
+  skills: CodeSkill[],
 }
 
 const Skillset = ({
-  mainSkills,
-  subSkills,
+  skills,
 }: Props): ReactElement => {
 
-  const maxYears = useCallback((mainSkills: MainSkill[]) => {
+  const maxYears = useCallback((mainSkills: CodeSkill[]) => {
     let maxCommercial = 0;
     let maxPersonal = 0;
 
@@ -37,21 +34,15 @@ const Skillset = ({
   }, []);
 
   //const max = maxYears(mainSkills);
+  const testSkill: CodeSkill = {
+    name: 'Typescript',
+    commercial: 2,
+    personal: 3,
+  }
 
   return (
-    <div className="flex flex-col w-full items-center m-16">
-      {
-        mainSkills.map((mainSkill, key) => (
-          <SkillBar
-            skill={mainSkill}
-            max={5}
-            key={key}
-          />
-        ))
-      }
-      <SubSkills
-        skills={subSkills}
-      />
+    <div className="flex flex-col w-full items-center m-16 rounded-2xl bg-NEUTRAL_DARK">
+      <HoverableSkill content={testSkill}/>
     </div>
   );
 }

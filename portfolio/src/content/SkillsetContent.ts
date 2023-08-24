@@ -1,4 +1,4 @@
-import { MainSkill } from "@/components/skill-bars/Skillset";
+import { MainSkill } from "@/components/skillset/Skillset";
 
 export const MainSkillsContent: MainSkill[] = [
   {
