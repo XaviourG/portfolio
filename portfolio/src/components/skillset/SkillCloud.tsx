@@ -29,6 +29,7 @@ const SkillCloud = ({
               content={skill}
               closeTooltipsTrigger={activeTooltip === key}
               focusHook={(b: boolean) => setActive(b, key)}
+              isFocused={activeTooltip === key}
             />
           </div>
         ))

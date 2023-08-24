@@ -7,12 +7,14 @@ interface Props {
   content: CodeSkill,
   closeTooltipsTrigger: boolean,
   focusHook: (state: boolean) => void,
+  isFocused: boolean,
 }
 
 const HoverableSkill = ({
   content,
   closeTooltipsTrigger,
   focusHook,
+  isFocused,
 }: Props): ReactElement => {
 
   return (
@@ -22,7 +24,7 @@ const HoverableSkill = ({
       forceState={closeTooltipsTrigger}
       focusHook={focusHook}
     >
-      <div className="bg-SECONDARY rounded-full py-2 px-4">
+      <div className={`${isFocused ? 'bg-NEUTRAL_LIGHT' : 'bg-SECONDARY'} rounded-full py-2 px-4`}>
         <p className="text-BACKGROUND_END">
           {content.name}
         </p>
