@@ -34,14 +34,14 @@ const SkillTooltip = ({
 
   return (
     <div className="flex items-center p-3">
-      <div className="flex flex-col p-4">
-        <p className="text-xl text-BACKGROUND">
+      <div className="flex flex-col" style={{minWidth: '12rem'}}>
+        <p className="text-lg text-BACKGROUND">
           {`${content.name} Experience`}
         </p>
-        <p className="text-lg text-PERSONAL">
+        <p className="text-md text-PERSONAL">
           {`Personal: ${content.personal} years`}
         </p>
-        <p className="text-lg text-COMMERCIAL">
+        <p className="text-md text-COMMERCIAL">
           {`Commercial: ${content.commercial} years`}
         </p>
       </div>
