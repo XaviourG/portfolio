@@ -30,6 +30,8 @@ const config: Config = {
         BACKGROUND: '#0B051A',
         BACKGROUND_START: '#090515',
         BACKGROUND_END: '#090515',
+        PERSONAL: '#7C5CD650',
+        COMMERCIAL: '#36ebe850',
       },
     },
   },
