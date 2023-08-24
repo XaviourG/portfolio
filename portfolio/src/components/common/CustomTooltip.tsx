@@ -76,6 +76,12 @@ const CustomTooltip = ({
       } else if ((window.innerWidth - ref.current.offsetLeft) < 150) {
         return '-18rem';
       }
+      if ((window.innerWidth/2) < ref.current.offsetLeft) {
+        return '-13rem';
+      }
+      if ((window.innerWidth/2) > ref.current.offsetLeft) {
+        return '-9rem';
+      }
     }
     return '-11rem';
   }

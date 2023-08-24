@@ -24,7 +24,7 @@ const PortfolioBody = (): ReactElement => {
       <NavigationBar RefData={refData}/>
     </div>
     <div className="w-full flex justify-end">
-      <p className="text-HIGHLIGHT75 pr-3">v2.4</p>
+      <p className="text-HIGHLIGHT75 pr-3">v2.6</p>
     </div>
     <div className='flex w-full flex-col xl:flex-row ' ref={aboutRef}>
       <div className='flex flex-col w-full xl:w-1/2'>
