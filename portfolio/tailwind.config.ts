@@ -19,7 +19,7 @@ const config: Config = {
       colors: {
         PRIMARY: '#FFFFFF',
         SECONDARY: '#7C5CD6',
-        SECONDARY50: '#7C5CD650',
+        SECONDARY50: '#7C5CD670',
         HIGHLIGHT: '#7C5CD6',
         HIGHLIGHT75: '#7C5CD690',
         NEUTRAL_LIGHT: '#FFFFFF',
