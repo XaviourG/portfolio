@@ -1,5 +1,6 @@
 import { ReactElement, useCallback } from "react";
 import HoverableSkill from "./HoverableSkill";
+import SkillCloud from "./SkillCloud";
 
 export interface CodeSkill {
   name: string,
@@ -42,7 +43,7 @@ const Skillset = ({
 
   return (
     <div className="flex flex-col w-full items-center m-16 rounded-2xl">
-      <HoverableSkill content={testSkill}/>
+      <SkillCloud skills={skills}/>
     </div>
   );
 }

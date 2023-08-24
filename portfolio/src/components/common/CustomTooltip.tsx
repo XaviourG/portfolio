@@ -21,7 +21,7 @@ const CustomTooltip = ({
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (forceState !== null) {
+    if (forceState !== null && forceState === false) {
       setWeakFocus(forceState);
       setStrongFocus(forceState);
     }
