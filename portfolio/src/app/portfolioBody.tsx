@@ -8,6 +8,7 @@ import ShowcaseSegment from "@/panels/ShowcaseSegment";
 import ProjectsSegment from "@/panels/ProjectsSegment";
 import { ReactElement, useRef } from "react"
 import { PageRefData } from "@/components/menu/PageRefData";
+import SkillsSegment from "@/panels/SkillsSegment";
 
 const PortfolioBody = (): ReactElement => {
   const aboutRef = useRef(null);
@@ -32,6 +33,9 @@ const PortfolioBody = (): ReactElement => {
         <ShowcaseSegment />
         <div className="flex w-full" ref={projectsRef}>
           <ProjectsSegment/>
+        </div>
+        <div className="flex w-full" ref={contactRef}>
+          <SkillsSegment/>
         </div>
         <div className="flex w-full" ref={contactRef}>
           <ContactSegment/>
