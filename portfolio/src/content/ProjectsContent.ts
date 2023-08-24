@@ -26,13 +26,13 @@ const ProjectsContent: ProjectContent[] = [
     subtitle: 'Demo Security Strategy Frontend',
     image: 'https://cdn.discordapp.com/attachments/1140589185221275770/1144066549867610183/image.png',
     tech: ['Typescript', 'React', 'MobX', 'Firebase'],
-    description: "A well architected front-end built in one day for a coding challenge. MobX state management, beautifully generic componenets, and solid use of design prinicpals. A exhibit of how well I can perform under pressure.",
+    description: "A well architected front-end built in one day for a coding challenge. MobX state management, beautifully generic components, and solid use of design prinicpals. A exhibit of how well I can perform under pressure.",
   },
   {
     title: 'XaviourG.com 2.0',
     subtitle: 'Web Portfolio',
     image: 'https://cdn.discordapp.com/attachments/1140589185221275770/1140591100109783060/image.png',
-    tech: ['NextJS', 'TailwindCSS', 'ThreeJS', 'Typescript', 'React', 'Firebase'],
+    tech: ['NextJS', 'TailwindCSS', 'ThreeJS', 'ChartJS', 'Typescript', 'React', 'Firebase'],
     description: "A UX optimised showcase of my skills and experience built on the latest and greatest front-end technology.",
   },
   {
