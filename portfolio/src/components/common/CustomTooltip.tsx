@@ -66,16 +66,16 @@ const CustomTooltip = ({
   }, [isBelowMidpoint])
 
   return (
-    <div className="flex flex-col w-full items-center">
-
-    {showAbove() && tooltip}
-
     <div ref={ref}
       className="flex flex-col w-full items-center"
       onMouseEnter={mouseEnter}
       onMouseLeave={mouseLeave}
       onClick={click}
     >
+
+    {showAbove() && tooltip}
+
+    <div ref={ref} className="flex flex-col w-full items-center">
       {children}
     </div>
 
