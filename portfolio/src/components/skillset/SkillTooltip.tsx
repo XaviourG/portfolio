@@ -33,7 +33,7 @@ const SkillTooltip = ({
 
 
   return (
-    <div className="flex bg-NEUTRAL_LIGHT rounded-2xl items-center p-3">
+    <div className="flex items-center p-3">
       <div className="flex flex-col p-4">
         <p className="text-xl text-BACKGROUND">
           {`${content.name} Experience`}
