@@ -3,16 +3,25 @@ import { ReactElement, useCallback, useEffect, useRef, useState } from "react";
 interface Props {
   tooltip: React.ReactNode,
   children: React.ReactNode,
+  forceState?: boolean | null,
 }
 
 const CustomTooltip = ({
   tooltip,
-  children
+  children,
+  forceState = null,
 }: Props): ReactElement => {
   const [weakFocus, setWeakFocus] = useState(false);
   const [strongFocus, setStrongFocus] = useState(false);
   const [isBelowMidpoint, setIsBelowMidpoint] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (forceState !== null) {
+      setWeakFocus(forceState);
+      setStrongFocus(forceState);
+    }
+  }, [forceState]);
 
   const mouseEnter = () => {
     setWeakFocus(true);
