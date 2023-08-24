@@ -20,8 +20,8 @@ const SkillTooltip = ({
       label: 'Technical Experience Distribution',
       data: [content.personal, content.commercial],
       backgroundColor: [
-        '#7C5CD650',
-        '#36ebe850',
+        '#503991',
+        '#36ebe8',
       ],
       hoverOffset: 4
     }]
@@ -35,7 +35,7 @@ const SkillTooltip = ({
   return (
     <div className="flex items-center p-3">
       <div className="flex flex-col" style={{minWidth: '12rem'}}>
-        <p className="text-lg text-BACKGROUND">
+        <p className="text-lg text-NEUTRAL_LIGHT pb-4">
           {`${content.name} Experience`}
         </p>
         <p className="text-md text-PERSONAL">

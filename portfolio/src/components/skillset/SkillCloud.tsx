@@ -21,7 +21,7 @@ const SkillCloud = ({
   }
 
   return (
-    <div className="flex flex-wrap w-full">
+    <div className="flex flex-wrap w-full" style={{justifyContent: 'center'}}>
       {
         skills.map((skill, key) => (
           <div key={key} className="p-1">

@@ -24,7 +24,7 @@ const HoverableSkill = ({
       forceState={closeTooltipsTrigger}
       focusHook={focusHook}
     >
-      <div className={`${isFocused ? 'bg-NEUTRAL_LIGHT' : 'bg-SECONDARY'} rounded-full py-2 px-4`}>
+      <div className={`${isFocused ? 'bg-SECONDARY' : 'bg-SECONDARY50'} rounded-full py-2 px-4`}>
         <p className="text-BACKGROUND_END">
           {content.name}
         </p>
