@@ -22,6 +22,13 @@ const ProjectsContent: ProjectContent[] = [
     description: "A web prototype of a training system for government youth workers. Integrates voice to text with a chat GPT wrapper to allow trainees to 'talk' to a simulated client, mimics criminal youth behaviour, provides feedback on interview skills.",
   },
   {
+    title: 'Frontend Challenge',
+    subtitle: 'Demo Security Strategy Frontend',
+    image: 'https://cdn.discordapp.com/attachments/1140589185221275770/1144066549867610183/image.png',
+    tech: ['Typescript', 'React', 'MobX', 'Firebase'],
+    description: "A well architected front-end built in one day for a coding challenge. MobX state management, beautifully generic componenets, and solid use of design prinicpals. A exhibit of how well I can perform under pressure.",
+  },
+  {
     title: 'XaviourG.com 2.0',
     subtitle: 'Web Portfolio',
     image: 'https://cdn.discordapp.com/attachments/1140589185221275770/1140591100109783060/image.png',
