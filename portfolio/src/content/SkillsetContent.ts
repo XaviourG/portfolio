@@ -56,6 +56,26 @@ export const MainSkillsContent: CodeSkill[] = [
     commercial: 0,
     personal: 1,
   },
+  {
+    name: 'Kotlin',
+    commercial: 0,
+    personal: 1,
+  },
+  {
+    name: 'Flutter',
+    commercial: 0,
+    personal: 1,
+  },
+  {
+    name: 'Azure',
+    commercial: 0,
+    personal: 1,
+  },
+  {
+    name: 'Linux',
+    commercial: 1,
+    personal: 2,
+  },
 ];
 
 export const SubSkillsContent: string[] = [
